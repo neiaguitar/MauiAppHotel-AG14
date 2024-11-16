@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.SobrePage"
+             Title="Sobre"
+             BackgroundColor="BlanchedAlmond">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                         Padding="10"
+                         Spacing="10">
+
+        <Label Text="Sobre o Aplicativo"
+               FontFamily="SourGummy"
+               FontSize="50"
+               TextColor="Brown" />
+
+        <Frame Padding="10">
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Desenvolvedor: Enéias Amarantes"
+                       FontFamily="Kanit"
+                       FontSize="Subtitle"
+                       TextColor="Brown" />
+                <Label Text="Ano de Desenvolvimento: 2024"
+                       FontFamily="Kanit"
+                       FontSize="Subtitle"
+                       TextColor="Brown" />
+                <Label Text="Versão: 1.0"
+                       FontFamily="Kanit"
+                       FontSize="Subtitle"
+                       TextColor="Brown" />
+            </VerticalStackLayout>
+        </Frame>
+
+    </VerticalStackLayout>
+
+</ContentPage>

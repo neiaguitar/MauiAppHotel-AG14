@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.HospedagemContratada"
+             BackgroundColor="BlanchedAlmond"
+             Title="">
+    <VerticalStackLayout>
+        <Label Text="Suíte Super Luxo"
+               TextColor="Brown"
+               FontFamily="SourGummy"
+               FontSize="50"
+               HorizontalTextAlignment="Center" />
+
+        <Frame Margin="10">
+            <HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label Text="Adultos: " FontFamily="Kanit"/>
+                    <Label Text="2" FontFamily="Kanit"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <Label Text="Crianças: " FontFamily="Kanit"/>
+                    <Label Text="2" FontFamily="Kanit"/>
+                </HorizontalStackLayout>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame Margin="10">
+            <Grid ColumnDefinitions="*, *, *"
+                  RowDefinitions="Auto, Auto">
+                <Label Grid.Row="0" Grid.Column="0" Text="Check-in" FontFamily="Kanit"/>
+                <Label Grid.Row="0" Grid.Column="1" Text="Check-out" FontFamily="Kanit"/>
+                <Label Grid.Row="0" Grid.Column="2" Text="Estadia" FontFamily="Kanit"/>
+
+                <Label Grid.Row="1" Grid.Column="0" Text="15/11/2024" FontFamily="Kanit"/>
+                <Label Grid.Row="1" Grid.Column="1" Text="17/11/2024" FontFamily="Kanit"/>
+                <Label Grid.Row="1" Grid.Column="2" Text="2" FontFamily="Kanit"/>
+            </Grid>
+        </Frame>
+
+        <Frame Margin="10">
+            <HorizontalStackLayout>
+                <Label Text="Valor Total:" FontFamily="Kanit"/>
+                <Label Text="R$ 500,00" FontFamily="Kanit"/>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Button Text="Voltar" BackgroundColor="Brown"
+                HorizontalOptions="Center"
+                Clicked="Button_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>
